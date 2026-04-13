@@ -6,11 +6,11 @@ const rl = readline.createInterface({
 });
 
 
-const numeroSecreto = Math.floor(Math.random() * 101);
+const numeroSecreto = Math.floor(Math.random() * 101) + 100 ;
 let tentativas = 0;
 
 console.log("Jogo de Adivinhação ");
-console.log("Tente adivinhar o número entre 0 e 100");
+console.log("Tente adivinhar o número entre 100 e 200");
 
 const jogar = () => {
   rl.question("Qual o seu palpite? ", (resposta) => {
